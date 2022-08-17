@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    /* 🔔Language and Environment */
+    //为输出的JavaScript设置JavaScript语言版本，并包含兼容的库声明。
+    "target": "ESNext",
+    //指定一组绑定的库声明文件，用于描述目标运行时环境。
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
+    "jsx": "preserve",
+    //启用TC39阶段2草图装饰器的实验支持。
+    "experimentalDecorators": true,
+
+    /* Modules */
+    "module": "ESNext" /* Specify what module code is generated. */,
+    //指定TypeScript如何从给定的模块说明符中查找文件。
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    //指定多个类似于' ./node_modules/@types '的文件夹。
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    //指定要包含而不被源文件引用的类型包名称。
+    "types": ["node"],
+    //启用导入.json文件
+    "resolveJsonModule": true,
+
+    /* JavaScript Support */
+    //允许JavaScript文件成为程序的一部分
+    "allowJs": true,
+
+    /* Emit */
+    //为发出的JavaScript文件创建源映射文件。
+    "sourceMap": true,
+
+    /* Interop Constraints */
+    //当一个模块没有默认导出时，允许'import x from y'。
+    "allowSyntheticDefaultImports": true,
+    //释放额外的JavaScript以简化对导入CommonJS模块的支持。
+    "esModuleInterop": true,
+    //确保导入正确。
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    //在给函数赋值时，要确保参数和返回值是子类型兼容的
+    "strictFunctionTypes": true,
+    //在未读取局部变量时启用错误报告。
+    "noUnusedLocals": true /* Enable error reporting when a local variables aren't read. */,
+    //未读取函数参数时引发错误
+    "noUnusedParameters": true,
+
+    /* Completeness */
+    //跳过所有.d类型检查。ts文件。
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "tests/server/**/*.ts", "dist", "**/*.js"],
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+    "webpack.config.ts",
+    "src/settings/dist/theme.js",
+    "src/tools.js"
+  ],
+  "extends": "@vue/tsconfig/tsconfig.web.json"
+}

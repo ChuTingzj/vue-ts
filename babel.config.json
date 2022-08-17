@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@vue/babel-preset-jsx",
+    "@babel/preset-typescript",
+    "@vue/cli-plugin-babel/preset"
+  ],
+  "plugins": ["@babel/plugin-transform-runtime"]
+}

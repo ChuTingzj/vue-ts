@@ -1,0 +1,26 @@
+@font-face {
+  font-family: iconfont; /* Project id 3591498 */
+  src: url('../../public/icon/iconfont.eot?t=1660631777328'); /* IE9 */
+  src: url('../../public/icon/iconfont.eot?t=1660631777328#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPkAAsAAAAACHAAAAOXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDBgqETIQJATYCJAMMCwgABCAFhGcHNBtjBxGVm93IfiQYN5ZnfdPyWIlKjaRv8vlytj+ZGMm6WLqYSAqeYn42tQj4SfzGkdcA2NyMoUyEagGJ/eWn70hgp5eGH/9zzHhFowHWtwFARmsk2HBge8NRZFwR3ju/A+Ibxi4v8hEQABIyUAampq6lB24Th82cjCCw0OsJEKWSiePGDIPIycFW4AhEEd90IQuyERzArGGeANjgfT/5hSwiAgw4Cn2bjtG1I3Hj6+2v76jqVAH6AU4dCOBgBgAHgAJIWZiSDK7W9wUN/CmgkIr4LIrlwYKAGdTldHp0Rcgv+R+PAQgPne8CMQk85qAYFhkI8PUdDQpw/EaA71B58/AYA2QBDKQ4P1e9i7u7i4ur2yTJtBnYXusKx95dO31u6EbrVcMq37Hfd9su6HrPE33wA1enKwbsaLVbvbppe2aaIzSrk92yHIah6np/DXDU4E8clmU3TZt2iBD7YcdBQD0wV8CP1/y6trfh27lN9dm6ZxZnmS5ph0hzWXYcVA94Mu5cgvPv3tHg07F1DveOe2hS3HRpUFW/yrSRGWOl6cLIHCW7uztbyRkpuI6/Le/c4boyb+Gak+P9jHe8uX3p2RXnXTmlfWt13hMt4/pffVhP4UxaJQyI7Y7tqM9uyh0gVPNqfHLZhpH92kMOBtRmHa21y5vhXFI7q6ZmlmZSXLEWZNQcSmtLTW0biChIPBB1TD3oPcdb8ZkdN9tHARKSbdN9flzOLtFfPJ9cvhK1Ourx5SdRT2L57oGeWLYrShpwReFeNys+Y+LG1BZVtaFmkrOHtXiujrrSzP64ZaCnx4vKLlN4VAAAnEZ9nMb/Ar+D3ZtmNwxxL/knyiwA4HPEr2FoiFNlQVUA4r3RE+CFCwY2rMkqDoCyRXSLXhGiWAHpTsohRYw3nA4AXvjUXejdOBkgEOGNgYGAYKAQEYVgMUnAQUYW8BBRChKSUbtchjemgoKwfQDEYRkAAg8cBAZuuAgUHriPYDEWcPDDN+Dhgf8gwUZcN5MRR/xwEnSKEfwfpsA7mSL1Wr3jcKxO8jxvlDxBF7SmSYduuKP0MSV/hk6VgIQ3uNLjcF0ZkvCMQc2omnprqehLTOCtOAk6xQj+D1PgnZzamvx5dxyO1UlDxFsrGdNQ69CapgHixt8b5VzINvkzdKoEJCC4wZXT4ir7GVJxvxmDmrGDN/XWqEVN+WZ64XZzhcUdzKPvUpcMoYQFuzHvdT72ogAA') format('woff2'),
+       url('../../public/icon/iconfont.woff?t=1660631777328') format('woff'),
+       url('../../public/icon/iconfont.ttf?t=1660631777328') format('truetype'),
+       url('../../public/icon/iconfont.svg?t=1660631777328#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: iconfont !important;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
+.icon-moon::before {
+  content: "\e6c3";
+}
+
+.icon-sun::before {
+  content: "\e6da";
+}
+
