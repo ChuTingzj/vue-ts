@@ -1,7 +1,7 @@
 {
   "name": "vue-ts",
   "version": "1.0.0",
-  "description": "vue3 typescript cli webpack eslint prettier tailwindcss",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "pnpm run serve",
@@ -9,9 +9,18 @@
     "lint:style": "stylelint src/**/*.scss --fix",
     "serve": "webpack serve --config ./config/webpack.config.dev.js",
     "build": "webpack --config ./config/webpack/config.prod.js --report",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "pnpm run lint"
   },
-  "keywords": [],
+  "keywords": [
+    "vue3",
+    "typescript",
+    "webpack",
+    "eslint",
+    "prettier",
+    "tailwindcss",
+    "presets"
+  ],
   "author": "ChuTing",
   "license": "ISC",
   "devDependencies": {
@@ -84,5 +93,9 @@
     "*.css",
     "*.scss",
     "*.sass"
-  ]
+  ],
+  "repository": {
+    "url": "git@github.com/ChuTingzj/vue-ts",
+    "type": "git"
+  }
 }
