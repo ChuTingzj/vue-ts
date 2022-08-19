@@ -16,14 +16,16 @@ module.exports = merge(common, {
       context: path.resolve(__dirname, '../src/'),
       cache: true,
       cacheLocation: path.resolve(__dirname, '../node_modules/.cache/eslint'),
-      extensions: ['.js', '.jsx', '.vue', '.ts', '.tsx'],
+      extensions: ['.vue', '.js', '.jsx', '.cjs', '.mjs', '.ts', '.tsx', '.cts', '.mts'],
       failOnWarning: false,
-      failOnError: true
+      failOnError: true,
+      ignorePath: '.gitignore'
     }),
     new StylelintWebpackPlugin({
       context: path.resolve(__dirname, '../src/'),
       configFile: path.resolve(__dirname, '../stylelint.config.js'),
-      files: ['**/*.scss']
+      fix: true,
+      files: ['src/**/*.scss', 'src/**/*.css', 'src/**/*.sass']
     })
   ],
   devtool: 'eval-cheap-module-source-map',
